@@ -1,0 +1,24 @@
+[GLOBAL]
+pants_version = "2.21.0"
+
+backend_packages = [
+  "pants.backend.python",
+  "pants.backend.python.lint.black",
+]
+
+[python]
+interpreter_constraints = ['==3.10.*']
+enable_resolves = true
+default_resolve = "python-tools"
+
+[python-bootstrap]
+search_path = ["<PYENV>"]
+
+[python.resolves]
+python-tools = "python-tools.lock"
+
+[black]
+install_from_resolve = "python-tools"
+requirements = [
+  "black",
+]
