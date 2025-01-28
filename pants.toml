@@ -19,6 +19,3 @@ python-tools = "python-tools.lock"
 
 [black]
 install_from_resolve = "python-tools"
-requirements = [
-  "black",
-]
