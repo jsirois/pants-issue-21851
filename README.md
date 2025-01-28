@@ -8,5 +8,3 @@ Pants Python search path, which should be acheived by installing
 :; pyenv versions | grep 3.10-dev
   3.10-dev
 ```
-
-No repro has been observed yet.
